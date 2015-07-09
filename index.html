@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Filip Vajdík">
+   <title>TextCanvas</title>
+	<!--script src="fabric.js"></script>
+   <!-- link rel="stylesheet" type="text/css" href="" -->
+</head>
+<body style="background-color: yellow;">
+   <div class="wrapper" style="margin: 100px;">
+		<h1> TextCanvas</h1>
+		Tohle bude canvas kamo
+		<div id="tady">
+		<script>
+		function fvCanvas(id) {
+			this.id = id;
+			this.element = document.getElementById(id);
+			this.width = 100;
+			this.height = 20;
+			
+			this.background = '_';
+			this.newline = '<br>';
+			
+			this.objects = [];
+			
+			this.add = function (object) {
+				this.objects.push(object);
+			}
+			
+			this.render = function () {
+				for(var i = 1; i <= this.height; i++) { // foreach row
+					
+					for(var j = 1; j <= this.width; j++) {
+						this.element.innerHTML += this.background;
+					}
+					this.element.innerHTML += this.newline;
+				}
+				
+			}
+		}
+		
+		function fvLine(from, to) {
+			this.type = 'horizontal';
+			y= 5;
+			stroke = 'X';
+		}
+		
+		
+		var muj_c = new fvCanvas('tady');
+		
+		var line = new fvLine;
+		
+		muj_c.add(line);
+		muj_c.render();
+		</script>
+   </div>
+</body>
+</html>
