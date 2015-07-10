@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html style="background-color: Gold; margin: 100px;"> <meta charset="utf-8">
-	
-	
+<html style="background-color: Gold; margin: 10px;"> <meta charset="utf-8">
 	
 	<script src="fvCanvas.js"></script>
 
-	<div id="fvCanvasDivId">
+	<code id="my_fvc" style="letter-spacing:10px; line-height:90%"></code>
 
 	<script>		
-		// create canvas in div fvCanvasId
-		var my_c = new fvCanvas('fvCanvasDivId');
+		// create canvas in div my_fvc
+		var fvc = new fvCanvas('my_fvc');
 
-		//set width and height
-		my_c.width = 15;
-		my_c.height = 6;
+		//set width and height of canvas
+		fvc.width = 30;
+		fvc.height = 30;
 
-		// fill area with 'O'
-		my_c.fill('O');
+		// fill area with '_'
+		fvc.fill('_');
 
-		// set "pixel"
-		my_c.matrix[2][4] = 'X';
+		// rectangle as a border. content = R. filled = false
+		fvc.rect(1, 1, fvc.height, fvc.width, 'R', false);
 		
+		// circle in the middle. r=10. content = E, filled = true
+		fvc.circle(fvc.width/2, fvc.height/2, 10, '&nbsp', true);
+		
+		// set "pixel" at row 12, col 12
+		fvc.matrix[12][12] = 'O';
+		// set "pixel" at row 12, col 4
+		fvc.matrix[12][18] = 'O';
+		
+		// text at [18, 8]
+		fvc.text(18, 8, '°HELLO WORLD°');
+		
+		// line from [] to []
+		fvc.line(25, 14, fvc.height, 14, 'N');
 		// render
-		my_c.render();
+		fvc.render();
 	</script>
 
 	
