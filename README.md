@@ -3,6 +3,7 @@ Interactive text art canvas
 
 
 Output of example:
+
 OOOOOOOOOOOOOOO
 
 OOOXOOOOOOOOOOO
