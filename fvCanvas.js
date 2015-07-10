@@ -34,7 +34,6 @@ function fvCanvas(id) {
 	
 	// fill this.matrix with characters
 	this.fill = function (fill) {
-		// background
 		for(var i = 1; i <= this.height; i++) { // foreach row
 			this.matrix[i] = [];
 			for(var j = 1; j <= this.width; j++) {
@@ -75,6 +74,7 @@ function fvCanvas(id) {
 		}
 	}
 	
+	// rectangle using lines
 	this.rect = function (x, y, x1, y1, content, filled) {
 		if(filled) {
 			for(var i = x; i <= x1; i++) {
@@ -88,12 +88,14 @@ function fvCanvas(id) {
 		}
 	}
 	
+	// add text
 	this.text = function (x, y, text) {
 		for(var i = 1; i <= text.length; i++) {
 			this.matrix[x][y + i - 1] = text.charAt(i-1);
 		}
 	}
 	
+	// add circle
 	this.circle = function(x , y , r, content, filled){
 		
 		this.matrix[x][y+r] = content;
@@ -103,19 +105,13 @@ function fvCanvas(id) {
 		
 		var cx = r;
 		var cy = 0;
-		//init draw 4 points on top,right,left and bottom.    
-		//init(ctx,x,y,r);
 
-		//we only need to calculate 1/8 of the arcs, 
-		//that is when angle = 45degree, cx = xy 
 		while(cx > cy){
-			if(cx*cx + cy*cy -r*r > 0){ // D(M) , if D(M) > 0, NW(x-1,y+1) is chooses
+			if(cx*cx + cy*cy -r*r > 0){ 
 			  cx--;
 			}
 			cy++;
 
-			//draw point and mirrow the points to other 7 places on circle
-			//mirrowing(ctx,x,y,cx,cy);
 			this.matrix[x+cx][y+cy] = content;
 			this.matrix[x-cx][y+cy] = content;
 			this.matrix[x+cx][y-cy] = content;
