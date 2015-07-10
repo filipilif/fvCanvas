@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html style="background-color: Gold; margin: 100px;"> <meta charset="utf-8">
+	
+	
+	
+	<script src="fvCanvas.js"></script>
+
+	<div id="fvCanvasDivId">
+
+	<script>		
+		// create canvas in div fvCanvasId
+		var my_c = new fvCanvas('fvCanvasDivId');
+
+		//set width and height
+		my_c.width = 15;
+		my_c.height = 6;
+
+		// fill area with 'O'
+		my_c.fill('O');
+
+		// set "pixel"
+		my_c.matrix[2][4] = 'X';
+		
+		// render
+		my_c.render();
+	</script>
+
+	
+	
+</html>
