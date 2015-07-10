@@ -4,14 +4,62 @@ Interactive text art canvas
 
 Output of example:
 
-OOOOOOOOOOOOOOO
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 
-OOOXOOOOOOOOOOO
+R____________________________R
 
-OOOOOOOOOOOOOOO
+R____________________________R
 
-OOOOOOOOOOOOOOO
+R____________________________R
 
-OOOOOOOOOOOOOOO
+R____________   _____________R
 
-OOOOOOOOOOOOOOO
+R________           _________R
+
+R______               _______R
+
+R_____                 ______R
+
+R_____                 ______R
+
+R____                   _____R
+
+R____                   _____R
+
+R____      O     O      _____R
+
+R____                   _____R
+
+R___                     ____R
+
+R___                     ____R
+
+R___                     ____R
+
+R____                   _____R
+
+R____  °HELLO WORLD°    _____R
+
+R____                   _____R
+
+R____                   _____R
+
+R_____                 ______R
+
+R_____                 ______R
+
+R______               _______R
+
+R________           _________R
+
+R____________N  _____________R
+
+R____________N_______________R
+
+R____________N_______________R
+
+R____________N_______________R
+
+R____________N_______________R
+
+RRRRRRRRRRRRRNRRRRRRRRRRRRRRRR
