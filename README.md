@@ -1,65 +1,6 @@
 # fvCanvas
 Interactive text art canvas
 
+It is something like HTML5 canvas, but instead of using pixels, you use text.
 
-Output of example:
-
-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
-
-R____________________________R
-
-R____________________________R
-
-R____________________________R
-
-R____________   _____________R
-
-R________           _________R
-
-R______               _______R
-
-R_____                 ______R
-
-R_____                 ______R
-
-R____                   _____R
-
-R____                   _____R
-
-R____      O     O      _____R
-
-R____                   _____R
-
-R___                     ____R
-
-R___                     ____R
-
-R___                     ____R
-
-R____                   _____R
-
-R____  °HELLO WORLD°    _____R
-
-R____                   _____R
-
-R____                   _____R
-
-R_____                 ______R
-
-R_____                 ______R
-
-R______               _______R
-
-R________           _________R
-
-R____________N  _____________R
-
-R____________N_______________R
-
-R____________N_______________R
-
-R____________N_______________R
-
-R____________N_______________R
-
-RRRRRRRRRRRRRNRRRRRRRRRRRRRRRR
+Check it out, it is easy.
